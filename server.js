@@ -25,7 +25,7 @@ app.get('/api/hello', function (req, res) {
 });
 
 // request header parser
-// get ip address
+// get ip address, language, operating system, and software
 app.get('/api/whoami', function (req, res) {
 	var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 	var language = req.headers['accept-language'];
